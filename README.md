@@ -1,8 +1,6 @@
 # EASY CONTENT! 👋👋
 <center>
-<img src="https://img.shields.io/github/license/ghalbeyou/easy-content">
-<img src="https://img.shields.io/static/v1?label=Language&message=ENGLISH&color=blue">
-<img src="https://img.shields.io/static/v1?label=Programming%20Language&message=PHP&color=critical">
+<img src="https://img.shields.io/github/license/ghalbeyou/easy-content"><img src="https://img.shields.io/static/v1?label=Language&message=ENGLISH&color=blue"><img src="https://img.shields.io/static/v1?label=Programming%20Language&message=PHP&color=critical">
 </center>
 An Easy but USAGE CMS for wordpress
 

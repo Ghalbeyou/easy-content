@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <title>Setup - Easy Content</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Setup - Easy Content</h1>
+            </div>
+            <form method="get">
+                <input type="hidden" name="s" value="2">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="se_name">Site name</label>
+                        <input type="text" class="form-control" id="se_name" name="se_name" value="Easy Content">
+                    </div>
+                    <div class="form-group">
+                        <label for="se_url">Site URL</label>
+                        <input type="text" class="form-control" id="se_url" name="se_url" value="http://localhost">
+                    </div>
+                    <div class="form-group">
+                        <label for="se_email">Site email</label>
+                        <input type="text" class="form-control" id="se_email" name="se_email" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="se_username">Admin username</label>
+                        <input type="text" class="form-control" id="se_username" name="se_username" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="se_password">Admin password</label>
+                        <input type="password" class="form-control" id="se_password" name="se_password" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="se_password_confirm">Confirm password</label>
+                        <input type="password" class="form-control" id="se_password_confirm" name="se_password_confirm" value="">
+                    </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button id="submit_btn" type="submit" class="btn btn-primary">
+                            Next
+                            <img src="/public/svg/arrow-right.svg" alt="Next Image">
+                        </button>
+                    </div>
+                </div>
+                
+
+            </form>
+    </div>
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $('#submit_btn').
+            // disable the button
+            $('#submit_btn').prop('disabled', true);
+            // wait for the user to fill the form
+            $('input').keyup(function(){
+                // if all the fields are filled, enable the button
+                if($('#se_name').val() != '' && $('#se_url').val() != '' && $('#se_email').val() != '' && $('#se_username').val() != '' && $('#se_password').val() != '' && $('#se_password_confirm').val() != ''){
+                    $('#submit_btn').prop('disabled', false);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
